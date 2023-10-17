@@ -10,3 +10,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.react-icons {
+  vertical-align: middle;
+}

@@ -1,45 +1,25 @@
-main {
-  height: 100vh;
-  widht: 100%;
+header {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  font-size: 1.25rem;
 
-  h1 {
-    widht: 348px;
-    height: 75px;
-    font-weight: 600;
-    border-radius: .3em;
-    padding: .5em 1em;
-    cursor: pointer;
-    border: 2px solid #0a6d4c80;
-    color: #b311f380;
+  .navbar-container ul{
+    display: flex;
+    gap: 1rem;
 
-    box-shadow: 2px 7px 77px #0a6d4c80;
-    animation-name: gradientButtonShadow;
-    animation-duration: 8s;
-    animation-timing-function: ease;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: #464937;
+      }
+    }
   }
-}
-@keyframes gradientButtonShadow {
-  0% {
-      box-shadow: 2px 7px 77px #0a6d4c80;
-      border: 2px solid #0a6d4c80;
-      color: #b311f380;
-  }
-  50% {
-      box-shadow: 2px 7px 77px #b311f380;
-      border: 2px solid #b311f380;
-      color: #008deb80;
-  }
-  100% {
-      box-shadow: 2px 7px 77px #008deb80;
-      border: 2px solid #008deb80;
-      color: #0a6d4c80;
+
+  .navbar-social ul li a svg {
+    font-size: 1.5rem;
   }
 }
