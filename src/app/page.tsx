@@ -1,44 +1,24 @@
-import Image from 'next/image'
-import { BiLogoInstagram } from 'react-icons/bi'
-import { AiOutlineMail } from 'react-icons/ai'
-import { FaWhatsapp } from 'react-icons/fa'
 import './style.scss'
 
+import Image from 'next/image'
+import Header from '@/components/organisms/Header/Header'
+import a_terapia_nutricional from '@/utils/texts/a-terapia-nutricional'
+import fruits_stock from "@/assets/fruits-stock.png"
+
 export default function Home() {
+
   return (
-    <main>
-      <header>
-        <Image src="/assets/nutricv-logo.svg" alt="Nutri Carol Viegas" width={59} height={72} />
-        <nav className='navbar-website navbar-container'>
-          <ul>
-            <li>
-              <a href="#about">Terapia Nutricional</a>
-            </li>
-            <li>
-              <a href="#services">Sobre mim</a>
-            </li>
-            <li>
-              <a href="#contact">Receitas</a>
-            </li>
-            <li>
-              <a href="#contact">Benefícios</a>
-            </li>
-          </ul>
-        </nav>
-        <nav className='navbar-social navbar-container'>
-          <ul>
-            <li>
-              <a href="#about"><FaWhatsapp /></a>
-            </li>
-            <li>
-              <a href="#about"><BiLogoInstagram /></a>
-            </li>
-            <li>
-              <a href="#about"><AiOutlineMail /></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </main>
+    <>
+      <Header />
+      <main>
+        <section className='section-terapia-nutricional'>
+          <div>
+            <h1>A Terapia Nutricional</h1>
+            <p>{a_terapia_nutricional}</p>
+          </div>
+          <Image src={fruits_stock} alt="Frutas saudáveis" width={425} />
+        </section>
+      </main>
+    </>
   )
 }

@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.25rem;
+
+  .navbar-container ul{
+    display: flex;
+    gap: 1rem;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: #464937;
+      }
+    }
+  }
+
+  .navbar-social ul li a svg {
+    font-size: 1.5rem;
+  }
+}

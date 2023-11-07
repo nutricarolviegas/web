@@ -1,25 +1,42 @@
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1.25rem;
+html {
+  color: #474747;
+  background-color: #EFF1E9;
 
-  .navbar-container ul{
-    display: flex;
-    gap: 1rem;
+  main {
+    margin-top: 5rem;
 
-    li {
-      list-style: none;
+    section {
+      margin: 0 15%;
+    }
 
-      a {
-        text-decoration: none;
-        color: #464937;
+    .section-terapia-nutricional {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-right: 20%;
+
+        h1 {
+          font-size: 2.5rem;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 1.25rem;
+          font-weight: 400;
+          line-height: normal;
+          text-align: justify;
+        }
       }
     }
-  }
 
-  .navbar-social ul li a svg {
-    font-size: 1.5rem;
+    h1 {
+      font-weight: 600;
+    }
   }
 }
