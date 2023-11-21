@@ -5,16 +5,23 @@ header {
   align-items: center;
   font-size: 1.25rem;
 
-  .navbar-container ul{
-    display: flex;
-    gap: 1rem;
+  .navbar-container{ 
+    &:not(.navbar-social) ul {
+      gap: 3rem;
+    }
 
-    li {
-      list-style: none;
+    ul {
+      display: flex;
+      gap: 1rem;
 
-      a {
-        text-decoration: none;
-        color: #464937;
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: #464937;
+          font-weight: 400;
+        }
       }
     }
   }
