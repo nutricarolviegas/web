@@ -1,0 +1,25 @@
+@use "../../../style/base";
+
+.swiper-buttons {
+  display: flex;
+  gap: .75rem;
+  align-self: flex-start;
+  margin-left: 1.5rem;
+
+  button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:nth-child(1) {
+      border: 2px solid base.$yellow-600;
+    }
+    &:nth-child(2) {
+      border: 2px solid base.$yellow-600;
+      background-color: base.$yellow-600;
+    }
+  }
+}

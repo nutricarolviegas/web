@@ -1,0 +1,11 @@
+.info-aside {
+  height: 548px;
+  display: flex;
+
+  div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

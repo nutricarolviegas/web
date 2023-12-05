@@ -12,16 +12,16 @@ const Header = () => {
       <nav className='navbar-website navbar-container'>
         <ul>
           <li>
-            <a href="#about">Terapia Nutricional</a>
+            <a href="#terapia_nutricional">Terapia Nutricional</a>
           </li>
           <li>
-            <a href="#services">Sobre mim</a>
+            <a href="#sobre_mim">Sobre mim</a>
           </li>
           <li>
-            <a href="#contact">Receitas</a>
+            <a href="#receitas">Receitas</a>
           </li>
           <li>
-            <a href="#contact">Benefícios</a>
+            <a href="#beneficios">Benefícios</a>
           </li>
         </ul>
       </nav>
