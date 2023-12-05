@@ -1,3 +1,5 @@
+"use client"
+
 import "./style.scss"
 
 import SwipeSlideButtons from "@/components/atoms/SwipeSlideButton/component"
