@@ -6,9 +6,6 @@ import Image from "next/image"
 import { ic_arrow_left, ic_arrow_right } from "@/assets/images/icons"
 import { useSwiper } from "swiper/react"
 
-type ComponentProps = {
-  direction: "left" | "right"
-}
 const SwipeSlideButtons = () => {
   const swiper = useSwiper()
 

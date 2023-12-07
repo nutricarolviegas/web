@@ -21,10 +21,52 @@ const RecipesSwiper = () => {
           spaceBetween: 20,
         },
       }}
-      loop={true}
+      // loop={true}
       className='section-swiper'
     >
       <SwipeSlideButtons />
+      {
+        recipes.map(recipe => {
+          return (
+            <SwiperSlide key={recipe.title}>
+              <Recipe
+                title={recipe.title}
+                cookDuration={recipe.cookDuration}
+                peopleServed={recipe.peopleServed}
+                imgUrl={recipe.imgUrl}
+              />
+            </SwiperSlide>
+          )
+        })
+      }
+      {
+        recipes.map(recipe => {
+          return (
+            <SwiperSlide key={recipe.title}>
+              <Recipe
+                title={recipe.title}
+                cookDuration={recipe.cookDuration}
+                peopleServed={recipe.peopleServed}
+                imgUrl={recipe.imgUrl}
+              />
+            </SwiperSlide>
+          )
+        })
+      }
+      {
+        recipes.map(recipe => {
+          return (
+            <SwiperSlide key={recipe.title}>
+              <Recipe
+                title={recipe.title}
+                cookDuration={recipe.cookDuration}
+                peopleServed={recipe.peopleServed}
+                imgUrl={recipe.imgUrl}
+              />
+            </SwiperSlide>
+          )
+        })
+      }
       {
         recipes.map(recipe => {
           return (
