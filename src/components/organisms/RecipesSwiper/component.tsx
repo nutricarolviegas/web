@@ -30,37 +30,9 @@ const RecipesSwiper = () => {
             <SwiperSlide key={recipe.title}>
               <Recipe
                 title={recipe.title}
-                cookDuration={recipe.cookDuration / 60}
-                imgUrl={recipe.imgUrl}
+                cookDuration={recipe.cookDuration}
                 peopleServed={recipe.peopleServed}
-              />
-            </SwiperSlide>
-          )
-        })
-      }
-      {
-        recipes.map(recipe => {
-          return (
-            <SwiperSlide key={recipe.title}>
-              <Recipe
-                title={recipe.title}
-                cookDuration={recipe.cookDuration / 60}
                 imgUrl={recipe.imgUrl}
-                peopleServed={recipe.peopleServed}
-              />
-            </SwiperSlide>
-          )
-        })
-      }
-      {
-        recipes.map(recipe => {
-          return (
-            <SwiperSlide key={recipe.title}>
-              <Recipe
-                title={recipe.title}
-                cookDuration={recipe.cookDuration / 60}
-                imgUrl={recipe.imgUrl}
-                peopleServed={recipe.peopleServed}
               />
             </SwiperSlide>
           )
