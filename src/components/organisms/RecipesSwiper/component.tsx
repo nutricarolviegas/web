@@ -21,6 +21,7 @@ const RecipesSwiper = () => {
           spaceBetween: 20,
         },
       }}
+      loop={true}
       className='section-swiper'
     >
       <SwipeSlideButtons />
