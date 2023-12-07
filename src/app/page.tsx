@@ -1,5 +1,3 @@
-"use client"
-
 import './style.scss'
 
 import Image from 'next/image'
@@ -12,6 +10,8 @@ import RecipesSwiper from '@/components/organisms/RecipesSwiper/component'
 import { ic_eat_food, ic_good_lunch, ic_healthy, ic_talk } from '@/assets/images/icons'
 import { Animated } from '@/components/atoms'
 import saira_condensed from '@/utils/fonts/saira-condensed'
+import Beneficts from '@/components/molecules/Beneficts/component'
+import { FaWhatsapp } from 'react-icons/fa'
 
 export default function Home() {
 
@@ -48,32 +48,20 @@ export default function Home() {
             <div className='info'>
               <span className="info-span">A Nutrição além de proporcionar saúde, bem estar e qualidade de vida ela tem por objetivo:
               </span>
-              <div className='beneficios-container'>
-                <Animated.Root>
-                  <Animated.Element direction='fromLeft' transition={{ delay: 0.2 }} >
-                    <Image src={ic_healthy} alt="Boa alimentação" width={36} />
-                    <span>Melhorar sua relação com a comida</span>
-                  </Animated.Element>
-                  <Animated.Element direction='fromLeft' transition={{ delay: 0.4 }} >
-                    <Image src={ic_good_lunch} alt="Saúde" width={36} />
-                    <span>Possibilitar comer bem, com prazer e sem culpa</span>
-                  </Animated.Element>
-                  <Animated.Element direction='fromLeft' transition={{ delay: 0.6 }} >
-                    <Image src={ic_eat_food} alt="Boa alimentação" height={36} />
-                    <span>Ensinar a identificar e respeitar sua fome</span>
-                  </Animated.Element>
-                  <Animated.Element direction='fromLeft' transition={{ delay: 0.8 }} >
-                    <Image src={ic_talk} alt="Auxílio" width={36} />
-                    <span>Utilize ferramentas que auxiliem a identificar e respeitar a sua fome</span>
-                  </Animated.Element>
-                </Animated.Root>
-              </div>
+              <Beneficts />
             </div>
           </div>
         </section>
       </main>
       <footer>
         <Image src="/assets/nutricv-logo.svg" width={59} height={72} alt='Nutri Carol Viégas'></Image>
+        <h3>© Todos os direitos reservados</h3>
+        <div>
+          <a href="#terapia_nutricional">
+            <FaWhatsapp />
+            <h5>+55 11 97183-7971</h5>
+          </a>
+        </div>
       </footer>
     </>
   )
