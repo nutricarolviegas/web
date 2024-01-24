@@ -1,3 +1,3 @@
-import Animated from "./animated"
+import Animated from "./animated/index.tsx"
 
 export { Animated }

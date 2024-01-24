@@ -2,7 +2,7 @@ import './style.scss'
 
 import Image from 'next/image'
 import { Header, Footer, RecipesSwiper, SobreMim } from '@/components/organisms'
-import Beneficts from '@/components/molecules/beneficts/component'
+import Beneficts from '@/components/molecules/beneficts/component.tsx'
 import { foods_stock, fruits_stock } from "@/assets/images"
 import saira_condensed from '@/utils/fonts/saira-condensed'
 import a_terapia_nutricional from '@/utils/texts/a-terapia-nutricional'
