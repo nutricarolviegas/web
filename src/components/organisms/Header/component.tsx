@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { BiLogoInstagram } from 'react-icons/bi'
 import { AiOutlineMail } from 'react-icons/ai'
 import { FaWhatsapp } from 'react-icons/fa'
+import { RxHamburgerMenu } from "react-icons/rx";
 import { useState, useEffect } from "react"
 
 const useScroll = () => {
@@ -25,12 +26,26 @@ const useScroll = () => {
 
 const Header = () => {
   const { isScrolled } = useScroll()
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuPressed = () => {
+    setMenuOpen(!menuOpen)
+    console.log(menuOpen)
+  }
 
   return (
     <header>
       <Image src="/assets/nutricv-logo.svg" alt="Nutri Carol Viegas" width={59} height={72} />
-      <nav className='navbar-website navbar-container'>
+      <button className="menu-button" onClick={handleMenuPressed}>
+        <RxHamburgerMenu className="menu-icon" />
+      </button>
+      <nav className={`navbar-website navbar-container `} data-visible={menuOpen ? "true" : "false"}>
         <ul>
+          <li className="in-menu-button">
+            <button className="menu-button" onClick={handleMenuPressed}>
+              <RxHamburgerMenu className="menu-icon" />
+            </button>
+          </li>
           <li>
             <a href="#terapia_nutricional">Terapia Nutricional</a>
           </li>
@@ -45,6 +60,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <button className={`background-menu ${menuOpen ? 'visible' : null}`} onClick={handleMenuPressed} />
       <nav className='navbar-social navbar-container'>
         <ul>
           <li>

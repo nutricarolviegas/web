@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   outline: none;
+  overflow-x: hidden;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
