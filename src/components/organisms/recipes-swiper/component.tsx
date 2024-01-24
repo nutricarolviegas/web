@@ -2,9 +2,9 @@
 
 import "./style.scss"
 
-import SwipeSlideButtons from "@/components/atoms/SwipeSlideButton/component"
-import Recipe from "@/components/molecules/Recipe/component"
-import { recipes } from "@/components/molecules/Recipe/recipes_base"
+import SwipeSlideButtons from "@/components/atoms/swiper-slide-button/component"
+import Recipe from "@/components/molecules/recipes/component"
+import { recipes } from "@/components/molecules/recipes/recipes_base"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
 

@@ -1,5 +1,5 @@
-import AnimatedElement from "./AnimatedElement";
-import AnimatedRoot from "./AnimatedRoot";
+import AnimatedElement from "./animated-element";
+import AnimatedRoot from "./animated-root";
 
 const Animated = {
   Root: AnimatedRoot,

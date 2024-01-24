@@ -1,0 +1,34 @@
+@use "../../../style/base";
+
+footer {
+  background-color: base.$green-gray-100;
+  padding: 1rem 16%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    color: #474747;
+    opacity: 35%;
+    margin-left: 7rem;
+  }
+
+  div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: base.$zinc-900;
+    text-decoration: none;
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+
+    h5 {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+}

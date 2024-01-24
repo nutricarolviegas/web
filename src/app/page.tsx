@@ -1,17 +1,11 @@
 import './style.scss'
 
 import Image from 'next/image'
-import { Header } from '@/components/organisms'
-import a_terapia_nutricional from '@/utils/texts/a-terapia-nutricional'
+import { Header, Footer, RecipesSwiper, SobreMim } from '@/components/organisms'
+import Beneficts from '@/components/molecules/beneficts/component'
 import { foods_stock, fruits_stock } from "@/assets/images"
-import { carol_portrait } from '@/assets/images/carol-portrait'
-import { AboutNutriLeftAside, AboutNutriRightAside } from '@/components/molecules'
-import RecipesSwiper from '@/components/organisms/RecipesSwiper/component'
-import { ic_eat_food, ic_good_lunch, ic_healthy, ic_talk } from '@/assets/images/icons'
-import { Animated } from '@/components/atoms'
 import saira_condensed from '@/utils/fonts/saira-condensed'
-import Beneficts from '@/components/molecules/Beneficts/component'
-import { FaWhatsapp } from 'react-icons/fa'
+import a_terapia_nutricional from '@/utils/texts/a-terapia-nutricional'
 
 export default function Home() {
 
@@ -27,16 +21,7 @@ export default function Home() {
           </div>
           <Image src={fruits_stock} alt="Frutas saudáveis" width={400} />
         </section>
-        <section id="sobre_mim" className="section-nutri-carol">
-          <h1 className={saira_condensed.className}>Carolina Viégas</h1>
-          <div className='about-container'>
-            <AboutNutriLeftAside />
-            <div className='nutri-portrait'>
-              <Image src={carol_portrait} width={400} alt="Carolina Viégas" />
-            </div>
-            <AboutNutriRightAside />
-          </div>
-        </section>
+        <SobreMim />
         <section id="receitas" className="section-recipes" >
           <h1 className={saira_condensed.className}>Receitas</h1>
           <RecipesSwiper />
@@ -53,16 +38,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer>
-        <Image src="/assets/nutricv-logo.svg" width={59} height={72} alt='Nutri Carol Viégas'></Image>
-        <h3>© Todos os direitos reservados</h3>
-        <div>
-          <a href="#terapia_nutricional">
-            <FaWhatsapp />
-            <h5>+55 11 97183-7971</h5>
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

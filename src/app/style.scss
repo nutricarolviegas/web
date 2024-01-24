@@ -42,7 +42,7 @@ html {
 
         input {
           background-color: base.$stone-800;
-          color: base.$grey-50-87;
+          color: #ffffff;
           outline: none;
           border: none;
           padding: .25rem 1.75rem;
@@ -51,49 +51,6 @@ html {
           border-radius: 1rem;
           margin-top: 3rem;
           cursor: pointer;
-        }
-      }
-    }
-
-    .section-nutri-carol {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: #ffff;
-      padding: 3rem 0;
-      gap: 4rem;
-
-      h1 {
-        font-size: 3rem;
-      }
-
-      .about-container {
-        display: flex;
-        gap: 1rem;
-        height: 100%;
-
-        .nutri-portrait {
-          position: relative;
-          margin-left: 2rem;
-
-          img {
-            z-index: 10;
-            position: relative;
-          }
-
-          &::before {
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background-color: base.$green-500;
-            left: -2rem;
-            top: calc(-2rem + 7px);
-            z-index: 0;
-          }
-          
         }
       }
     }
@@ -127,7 +84,8 @@ html {
       justify-content: center;
       gap: 7%;
       background-color: #ffffff;
-      padding: 2rem;
+      padding: 4rem 2rem;
+      
 
       .container {
         display: flex;
@@ -157,39 +115,6 @@ html {
 
     h1 {
       font-weight: 600;
-    }
-  }
-
-  footer {
-    background-color: base.$green-gray-100;
-    padding: 1rem 16%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    h3 {
-      color: #474747;
-      opacity: 35%;
-      margin-left: 7rem;
-    }
-
-    div a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      color: base.$zinc-900;
-      text-decoration: none;
-
-      svg {
-        width: 36px;
-        height: 36px;
-      }
-
-      h5 {
-        font-weight: 500;
-        font-size: 1rem;
-      }
     }
   }
 }
