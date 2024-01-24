@@ -1,3 +1,3 @@
-import Animated from "./animated/index"
+import Animated from "./animated"
 
 export { Animated }
