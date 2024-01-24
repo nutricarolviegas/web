@@ -20,7 +20,7 @@ const Beneficts = () => {
         </Animated.Element>
         <Animated.Element direction='fromLeft' transition={{ delay: 0.6 }} >
           <Image src={ic_eat_food} alt="Boa alimentação" height={36} />
-          <span>Ensinar a identificar e respeitar sua fome</span>
+          <span>Orientar a comer de maneira consciente, equilibrada e com atenção plena</span>
         </Animated.Element>
         <Animated.Element direction='fromLeft' transition={{ delay: 0.8 }} >
           <Image src={ic_talk} alt="Auxílio" width={36} />
